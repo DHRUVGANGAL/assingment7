@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*{
+    text-transform: capitalize;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* flex-flow: wrap; */
+    align-items: center;
+     
+}
+.heading{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800;
+    color: rgb(27, 0, 53);
+    text-shadow: 2px 2px 3px rgb(92, 92, 170);
+    align-self: center;
+    
+    
+}
+.btn1{
+    margin-top: 400px;
+    align-self: center;
+    
+}
+
+.btn{
+    align-self: center;
+    border-radius: 32px;
+    padding: 6px;
+    background-color: rgb(233, 134, 134);
+    color: rgb(231, 231, 31);
+
+  
+}
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1 class="heading">assingment 7</h1>
+        <div class="btn1">  <button type="button" class="btn" onclick="changecolor()">CLICK ME</button>
+    </div></div> 
+
+
+
+
+    <script>
+
+var index=0;
+
+function changecolor(){
+    var color=["red","blue","green","yellow","orange","purple"];
+
+    document.getElementsByTagName("body")[0].style.background=color[index++];
+    if(index>color.length - 1)
+    index = 0;
+}
+
+    </script>
+</body>
+</html>
